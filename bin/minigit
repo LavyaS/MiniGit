@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+# MiniGit launcher for Linux/macOS (and Git Bash). Usage: minigit <command> [args]
+# Requires Java 17+ on PATH and a built jar (mvn clean package).
+DIR="$(cd "$(dirname "$0")" && pwd)"
+JAR="$DIR/../target/minigit.jar"
+if [ ! -f "$JAR" ]; then
+    echo "minigit: $JAR not found. Run 'mvn clean package' first." >&2
+    exit 1
+fi
+exec java -jar "$JAR" "$@"

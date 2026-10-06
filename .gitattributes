@@ -1,0 +1,9 @@
+# Normalise line endings in the repository; check out as the platform expects.
+* text=auto
+
+# The Unix launcher must always use LF (a CR after the shebang breaks it); the Windows launcher uses CRLF.
+bin/minigit text eol=lf
+bin/minigit.cmd text eol=crlf
+*.java text eol=lf
+*.xml text eol=lf
+*.md text eol=lf
