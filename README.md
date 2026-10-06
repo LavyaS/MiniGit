@@ -267,4 +267,4 @@ MiniGit is an educational project and **not a replacement for Git**. Notably:
 
 ## License
 
-Use it freely for learning.
+MiniGit is released under the [MIT License](LICENSE). Copyright (c) 2026 Lavya S Chauhan.
